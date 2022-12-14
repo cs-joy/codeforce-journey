@@ -5,4 +5,6 @@ Codeforces is a website that hosts competitive programming contests. It is maint
 
 
 
+ref :: [Competitive Programming](https://en.wikipedia.org/wiki/Competitive_programming)
+
 read more about [codeforce p.](https://en.wikipedia.org/wiki/Codeforces)
