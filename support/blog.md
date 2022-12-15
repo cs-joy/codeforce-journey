@@ -1,1 +1,0 @@
-[C++ Tricks](https://codeforces.com/blog/entry/15643)
