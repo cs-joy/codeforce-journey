@@ -1,9 +1,19 @@
 # A. Building prefix sums
 
-<center>test time limit 3 seconds</center>
-        - memory limit per test 256 megabytes
-                - **input:** standard input
-                - **output:** standard output
+<div align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+<sub>test time limit 3 seconds</sub><br>
+<sub>memory limit per test 256 megabytes</sub><br>
+<sub>input: standard input</sub><br>
+<sub>output: standard output</sub><br>
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</div>
 
 
 Given an array a. Output its array of prefix sums. In other words, print `0, a1, a1+a2, ……, a1+a2+…+an`.
