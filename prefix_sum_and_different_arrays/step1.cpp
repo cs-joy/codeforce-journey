@@ -38,3 +38,6 @@ int main()
 
     return 0;
 }
+
+
+// source:: https://codeforces.com/edu/course/3/lesson/10/1
