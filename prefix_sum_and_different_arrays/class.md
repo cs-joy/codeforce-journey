@@ -30,3 +30,30 @@ b0 = 0
 bi + 1 = bi + ai    for all i ≥ 0
 ```
 From the recursive formula, it immediately becomes clear how to calculate the array of prefix sums in O(n):
+
+```cpp
+vector<int> findPrefixSums(vector<int>& a) {
+    int n = a.size();
+    vector<int> prefixSums(n + 1, 0);
+    for (int i = 0; i < n; i++) {
+        prefixSums[i + 1] = prefixSums[i] + a[i];
+    }
+    return prefixSums;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Reference](https://codeforces.com/edu/course/3/lesson/10)
