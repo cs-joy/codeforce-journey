@@ -69,4 +69,4 @@ We already have two intuitions for understanding `bi`: the sum of the first `i` 
 
 
 
-> [Reference](https://codeforces.com/edu/course/3/lesson/10)
+> [Reference](https://codeforces.com/edu/course/3/lesson/10 'Original Content in Russin Language')
