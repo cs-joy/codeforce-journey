@@ -60,7 +60,7 @@ Note that the partial_sum function itself does not leave zero at the beginning, 
 
 ### Visualization method
 We already have two intuitions for understanding `bi`: the sum of the first `i` elements of the original array and the sum of the elements of the original array on the half-interval `[0,i)`. Let's look at another way of thinking about this. You can imagine that the elements of the array are in cells, and the prefix sums are in between them - on partitions. And they contain the sums of everything that is in front of this partition:
-![img]()
+![img](https://github.com/cs-joy/codeforce-journey/blob/main/prefix_sum_and_different_arrays/visual.PNG)
 
 
 
