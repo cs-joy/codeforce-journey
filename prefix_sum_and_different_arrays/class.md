@@ -1,3 +1,5 @@
+# Community Course » Prefix sums and difference arrays » Step 1
+
 ## Definition and construction
 
 ### Definition:
