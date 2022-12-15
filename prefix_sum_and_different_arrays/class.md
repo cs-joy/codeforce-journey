@@ -14,7 +14,7 @@ b3=a0+a1+a2
 bn=a0+a1+…+an−1
 ```
 
-#### Power of half-intervals
+### Power of half-intervals
 
 Note that `bi` is the sum of the first `i` elements of `ai`. Sometimes prefix sums are defined in such a way that `bi = a0 + a1 +…+ ai`, but this method is inconvenient in practice, as we will see below.
 
@@ -55,7 +55,7 @@ for (int elem : prefixSums) {
     cout << elem << endl;
 }
 ```
-
+Note that the partial_sum function itself does not leave zero at the beginning, so we have to do it ourselves by adding one to prefixSums.begin().
 
 
 
