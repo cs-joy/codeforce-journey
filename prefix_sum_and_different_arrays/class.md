@@ -43,8 +43,18 @@ vector<int> findPrefixSums(vector<int>& a) {
     return prefixSums;
 }
 ```
+Note that the elements of the prefix sum array are the sums of a large number of elements of the original array, so be careful with overflow. And in general, throughout this topic, you may encounter overflow, so be always on the lookout!
 
+In addition, there is the `std::partial_sum` function built into C++, which just counts prefix sums. An example of her work:
 
+```c++
+vector<int> arr = {1, 2, 3, 4, 5};
+vector<int> prefixSums(n + 1, 0);
+partial_sum(arr.begin(), arr.end(), prefixSums.begin() + 1);
+for (int elem : prefixSums) {
+    cout << elem << endl;
+}
+```
 
 
 
