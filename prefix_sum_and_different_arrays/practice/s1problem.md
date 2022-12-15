@@ -21,20 +21,20 @@ In a single line print an array of prefix sums of array `a`.
 
 
 - **input data**
-    1
-    178
+    - 1
+    - 178
         - **output**
-        0 178
+            - 0 178
 - **input data**
-    7
-    0 1 2 3 4 5 6
+    - 7
+    - 0 1 2 3 4 5 6
         - **output**
-        0 0 1 3 6 10 15 21
+            - 0 0 1 3 6 10 15 21
 - **input data**
-    5
-    -1 -2 3 0 4
+    - 5
+    - -1 -2 3 0 4
         - **output**
-        0 -1 -3 0 0 4 
+            - 0 -1 -3 0 0 4 
 
 
 > [main article](https://codeforces.com/edu/course/3/lesson/10/1/practice/contest/324365/problem/A 'in russian language')
