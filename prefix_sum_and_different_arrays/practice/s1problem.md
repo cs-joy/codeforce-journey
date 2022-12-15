@@ -1,6 +1,6 @@
 # A. Building prefix sums
 
-        - test time limit 3 seconds
+[](test time limit 3 seconds 'center')
         - memory limit per test 256 megabytes
                 - **input:** standard input
                 - **output:** standard output
