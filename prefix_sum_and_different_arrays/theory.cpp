@@ -5,6 +5,7 @@
 using namespace std;
 
 void partial_Sum(); // prototype
+void lastTopic();
 
 vector<int> findPrefixSums(vector<int> a)
 {
@@ -58,6 +59,9 @@ int main()
 
     partial_Sum();
     
+    lastTopic();
+
+    
     return 0;
 }
 
@@ -75,4 +79,17 @@ void partial_Sum()
         cout << element << " ";
     }
     cout << endl;
+}
+
+void lastTopic()
+{
+    vector<int> a = {2, 4, 6, 8};
+    int n = a.size();
+    for(int i=1; i<n; i++)
+    {
+        a[i] += a[i-1];
+        //cout << a[i] << " ";
+    }
+
+    display("lastTopic", a);
 }
