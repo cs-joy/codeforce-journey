@@ -6,3 +6,4 @@
 
 [C++ Tricks](https://codeforces.com/blog/entry/15643)
 [CodeForces Algorithms](https://github.com/DionysiosB/CodeForces)
+[CodeForce PR](https://github.com/fuwutu/CodeForces)
