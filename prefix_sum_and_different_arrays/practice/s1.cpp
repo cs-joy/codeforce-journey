@@ -5,41 +5,51 @@
 
 #include <iostream>
 #include <vector>
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 
 using namespace std;
 
-void display(vector<int> b)
+typedef long long ll;
+
+vector<ll> findPrefixSums(vector<ll> a)
+{
+    ll n = a.size();
+    vector<ll> b(n+1, 0);
+    for(int i=0; i<n; i++)
+    {
+        b[i+1] = b[i] + a[i];
+    }
+
+    return b;
+}
+
+void display(vector<ll> b)
 {
 
-    int n = b.size();
+    ll n = b.size();
     for(int i=0; i<n; i++)
     {
         cout << b[i] << " ";
     }
 }
 
+
+
+
 int main()
 {
-    int n;
+    ll n;
     cin >> n;
 
-    int a[n];
+    vector<ll> a(n, 0);
 
     for(int i=0; i<n; i++)
     {
         cin >> a[i];
     }
 
-    int size = sizeof(a) / sizeof(a[0]);
-    vector<int> b(size+1, 0);
-
-    for(int i=0; i<size; i++)
-    {
-        b[i+1] = b[i] + a[i];
-    }
-
+    vector<ll> b = findPrefixSums(a);
     display(b);
-
+    
     return 0;
 }
