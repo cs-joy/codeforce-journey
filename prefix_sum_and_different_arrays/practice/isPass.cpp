@@ -5,7 +5,7 @@ using namespace std;
 
 vector<int> findPrefixSums(vector<int> a)
 {
-    int n = a.size();
+    int64_t n = a.size();
     vector<int> b(n+1, 0);
     for(int i=0; i<n; i++)
     {
