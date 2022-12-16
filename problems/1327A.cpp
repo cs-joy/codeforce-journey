@@ -25,3 +25,25 @@ int main()
 
     return 0;
 }
+
+/**
+input::
+6
+3 1
+4 2
+10 3
+10 2
+16 4
+16 5
+
+
+output::
+YES
+YES
+NO
+YES
+YES
+NO
+
+
+*/
