@@ -76,9 +76,31 @@ int main()
     cout << sum << endl;
     cout << ar[n-2];
     */
-    vector<int> a = {3, 5, 6, 7};
+   /*
+    vector<int> a = {-1, -2, 3, 0, 4};
     int res = disyplay(pRs(a));
     cout << res;
+    */
+
+     int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+     int n = sizeof(a) / sizeof(a[0]);
+
+     int left, right;
+
+     cin >> left >> right;
+
+     int lpos = n - left;
+     int rpos = n - right;
+     int sum=0;
+
+     for(int i=left; i<=right; i++)
+     {
+        for(int j=left+1; j<=right; j++)
+        {
+            cout << a[j] << " ";
+        }
+     }
+     cout <<  endl;
 
     //cout << feedback();
 
