@@ -68,9 +68,21 @@ Given two arrays of the same length. It is necessary to find such a subsegment s
 
 #### Task: Grasshopper
 
+The grasshopper is in the cell with index `0` and wants to get into the cell with index `n`. In one jump, the grasshopper can move forward any number of cells, but no less than `l` and no more than `r`. Find how many grasshopper routes there are. Asymptotic O(n).
 
+#### Answer
+The problem is very similar to the standard grasshopper problem, but the jumps were `11` and `22` long, and now we have an `unlimited number` of different jumps, so the same solution will run in `O(n⋅(r−l))`, which in the worst case will be `O(n2)`.
 
+Let's take a closer look at the dynamics recalculation formula. The number of ways to get to cell `i` is the sum of the number of ways to get to all previous cells on the grasshopper's path:
 
+`dpi=dpi−r+dpi−r+1+…+dpi−l−1+dpi−l`
 
+That is, an element of the `dp` array is determined through the sum of a segment of the elements of the same array. Let's go through the positions in ascending order and not only count the `dp` array, but also its prefix sums. Then the recalculation of `dpi` through prefix sums will work in O(1), and the asymptotics of the entire algorithm will be O(n).
+
+Thus, we see that in tasks it is not necessary to precalculate the array of prefix sums in advance, it can be built in the course of solving the problem and used at the same time.
+
+### changing array
+
+Prefix sums are very convenient for calculating the sum on a segment if the array does not change during queries. Therefore, if some element of the array has changed, then you need to recalculate all the prefix sums in which it is included. It is too long! If there are change requests, then more advanced data structures are better suited: for example, a `segment` tree and a `Fenwick` tree.
 
 [main content](https://codeforces.com/edu/course/3/lesson/10/2 'in russian language')
