@@ -29,6 +29,18 @@ Pay attention to what beautiful formulas we get: the sum on the half-interval `[
 If prefix sums were calculated in the form `bi=a0+a1+…+ai`, then unpleasant `±1` would appear in the formula, in which it is easy to get confused: `br−bl−1`, and the case when `l=0` would become extreme, it would have to be analyzed separately.
 
 
+### Prefix minima and xors
+
+Let's ask ourselves a question: 
+- for what operations can prefix amounts be used?
+- Not only for addition?
+- What properties must an operation have in order to use prefix sums?
+
+In fact, it is necessary that the function that we consider on the segment be reversible, which is equivalent to the fact that it should be possible to restore the value on the segment using two prefixes. And the operations of minimum and maximum are irreversible. It is not possible to get the meaning of the minimum of a segment by the meaning of the minimum of a prefix. For example, if the element at position `0` in the array is the smallest, then all prefix minimums will be equal to this element, but the minimums on some segments are not related to it at all.
+
+![img]()
+
+
 
 
 
