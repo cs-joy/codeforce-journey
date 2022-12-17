@@ -38,7 +38,35 @@ Let's ask ourselves a question:
 
 In fact, it is necessary that the function that we consider on the segment be reversible, which is equivalent to the fact that it should be possible to restore the value on the segment using two prefixes. And the operations of minimum and maximum are irreversible. It is not possible to get the meaning of the minimum of a segment by the meaning of the minimum of a prefix. For example, if the element at position `0` in the array is the smallest, then all prefix minimums will be equal to this element, but the minimums on some segments are not related to it at all.
 
-![img]()
+![img](https://github.com/cs-joy/codeforce-journey/blob/main/prefix_sum_and_different_arrays/step2/minMax.PNG)
+
+But besides the sum, there are other operations that are reversible. One of the most popular is perhaps the `“bitwise XOR”` operation, which is also called `“xor”` and is denoted by `⊕`.
+
+At the same time, it is even more convenient to use prefix sums for `xor`. The identity `x⊕x=0` is satisfied for any number `x`, which means that the operation `xor` is inverse to itself, so that the formula for calculating `bitwise exclusive or` on a segment is:
+
+`al⊕al+1⊕…⊕ar−1=br⊕bl`
+
+
+### Advanced Applications
+
+Let's solve a couple more problems in which we need prefix sums.
+
+### Problem: zero sum subsegment
+
+Given an array. It is necessary for `O(nlog⁡n)` to find any of its non-empty subsegment with zero sum of elements.
+
+#### Answer
+
+As we already know, the sums on the segments are the differences of the prefix sums. Therefore, the fact that the sum on a segment is equal to zero is equivalent to the fact that the prefix sums of its ends are equal.
+
+Thus, we have reduced the problem of finding a zero-sum subsegment to the problem of finding two identical elements in an array of prefix sums. To do this, you can, for example, sort the array of prefix sums and look for matching elements among neighboring. Or you can use a hash table (unordered_map in C++), and then the asymptotics of the solution will be completely `O (n)`.
+
+#### Exercise
+
+Given two arrays of the same length. It is necessary to find such a subsegment so that the sum of the elements of the first array on this subsegment coincides with the sum of the elements of the second array on this subsegment. Asymptotic O(n).
+
+
+#### Task: Grasshopper
 
 
 
