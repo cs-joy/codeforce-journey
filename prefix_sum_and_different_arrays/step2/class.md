@@ -24,6 +24,10 @@ int getSum(int left, int right) { // [left, right)
 }
 ```
 
+Pay attention to what beautiful formulas we get: the sum on the half-interval `[l,r)` is `br−bl`. Such beauty is achieved precisely due to the fact that we use half-intervals: and requests are given in the form of half-intervals, and prefix sums.
+
+If prefix sums were calculated in the form `bi=a0+a1+…+ai`, then unpleasant `±1` would appear in the formula, in which it is easy to get confused: `br−bl−1`, and the case when `l=0` would become extreme, it would have to be analyzed separately.
+
 
 
 
