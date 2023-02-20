@@ -27,13 +27,6 @@ int main()
             cin >> t[j];
         }
 
-        // copy second tower
-        vector<char> t2(m);
-        for (int j=0; j<m; j++)
-        {
-            t2[j] = t[j];
-        }
-
         int c;
         char ch, pos;
 
@@ -54,10 +47,39 @@ int main()
             }
         }
 
-        if (c == 1)
+        char cht;
+        for (int i=0; i<m; i++)
         {
-            t.push_back(ch);
-            s.pop_back();
+            for (int j=i+1; j<m; j++)
+            {
+                if (t[i] == t[j])
+                {
+                    c=1;
+                    cht = t[i];
+                    pos = i;
+                }
+                else
+                {
+                    c=0;
+                }
+            }
+        }
+        //cout << cht;
+
+        if (s.size() > 1)
+        {
+            if (c == 1)
+            {
+                t.push_back(ch);
+                s.pop_back();
+            }
+        }
+        else {
+            if (c == 1)
+            {
+                s.push_back(cht);
+                t.pop_back();
+            }
         }
 
         bool f_beautifull = false;
@@ -66,12 +88,24 @@ int main()
             f_beautifull = true;
         }
 
+
         bool t_beautifull = false;
         if (t[t.size() - 1] != t[t.size() - 2])
         {
             t_beautifull = true;
         }
-
+/*
+        cout << "s= ";
+        for (int i=0; i<s.size(); i++)
+        {
+            cout << s[i] << " ";
+        }
+        cout << "\nt= ";
+        for (int i=0; i<t.size(); i++)
+        {
+            cout << t[i] << " ";
+        }
+*/
         if (f_beautifull)
         {
             if (t_beautifull)
@@ -91,4 +125,3 @@ int main()
     }
     return 0;
 }
-
