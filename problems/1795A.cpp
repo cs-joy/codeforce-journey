@@ -31,7 +31,7 @@ int main()
 
         for (int i=0; i<n; i++)
         {
-            for (int j=i; j<n; j++)
+            for (int j=i+1; j<n; j++)
             {
                 if (s[i] == s[j])
                 {
@@ -49,7 +49,7 @@ int main()
 
         for (int i=0; i<m; i++)
         {
-            for (int j=i; j<m; j++)
+            for (int j=i+1; j<m; j++)
             {
                 if (t[i] == t[j])
                 {
