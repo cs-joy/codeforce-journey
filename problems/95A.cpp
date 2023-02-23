@@ -72,8 +72,9 @@ int main()
             t_beautifull = true;
         }
 
-        if (f_beautifull)
+        if (f_beautifull == true && t_beautifull == true)
         {
+            /*
             if (t_beautifull)
             {
                 cout << "YES" << endl;
@@ -81,12 +82,23 @@ int main()
             else
             {
                 cout << "NO" << endl;
-            }
+            }*/
+            cout << "YES" << endl;
         }
         else
         {
             cout << "NO" << endl;
         }
+/*
+        if (t_beautifull)
+            {
+                cout << "YES" << endl;
+            }
+            else
+            {
+                cout << "NO" << endl;
+            }
+            */
 
     }
     return 0;
